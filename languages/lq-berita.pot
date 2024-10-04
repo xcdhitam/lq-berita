@@ -1,0 +1,435 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LQ Berita\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-03 14:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xfebrian <xfebrian.cdhitam@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+"X-Domain: lq-berita"
+
+#. 1: list of categories.
+#: inc/template-tags.php:46 inc/template-tags.php:136
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:314
+msgid "&larr; Previous"
+msgstr ""
+
+#: inc/template-tags.php:43
+msgid ", "
+msgstr ""
+
+#: functions.php:146
+msgid "Add widgets here."
+msgstr ""
+
+#: 404.php:30 page-index.php:24 page-index.php:24 search.php:70 search.php:70
+msgid "All News"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:116
+msgid "Allow you add social icon."
+msgstr ""
+
+#: 404.php:99 page-index.php:91 search.php:139
+msgid "Apr"
+msgstr ""
+
+#: 404.php:103 page-index.php:95 search.php:143
+msgid "Aug"
+msgstr ""
+
+#. %s: Author display name.
+#: author.php:31
+#, php-format
+msgid "Author %s"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:55
+msgid "Banner"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:62
+msgid "Banner Under Menu"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:81
+msgid "Banner Under Post"
+msgstr ""
+
+#: inc/block-styles.php:23 inc/block-styles.php:32 inc/block-styles.php:41
+msgid "Borders"
+msgstr ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:35
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/template-functions.php:346
+msgid "Dailymotion"
+msgstr ""
+
+#: 404.php:107 page-index.php:99 search.php:147
+msgid "Dec"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:121
+msgid "Disable RSS icon in social"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:163 template-parts/content-page.php:39
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:75 inc/lqbtheme-customizer.php:94
+msgid "Enter the Google AdSense code or other advertising code"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:65 inc/lqbtheme-customizer.php:84
+msgid ""
+"Enter the Google AdSense code or other advertising code<br> Example : <br>"
+"&lt;img decoding=\"async\" loading=\"lazy\" src=\"https://lamanqu.com/wp-"
+"content/uploads/2023/03/selamat-menjalankan-ibadah-puasa.jpg\" "
+"alt=\"banner\" class=\"wp-image-7010\"sizes=\"(max-width: 1024px) 100vw, "
+"1024px\" width=\"1024\" height=\"168\"&gt;"
+msgstr ""
+
+#: inc/template-functions.php:258
+msgid "Facebook"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:129
+msgid "FB Url"
+msgstr ""
+
+#: 404.php:97 page-index.php:89 search.php:137
+msgid "Feb"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:132 inc/lqbtheme-customizer.php:141
+#: inc/lqbtheme-customizer.php:150 inc/lqbtheme-customizer.php:159
+#: inc/lqbtheme-customizer.php:169 inc/lqbtheme-customizer.php:178
+#: inc/lqbtheme-customizer.php:187
+msgid "Fill using http:// or https://"
+msgstr ""
+
+#: 404.php:115 page-index.php:107 search.php:155
+msgid "Filter"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:106
+msgid "Footer"
+msgstr ""
+
+#: functions.php:50
+msgid "Footer Navigation"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:113
+msgid "Footer Social"
+msgstr ""
+
+#: inc/block-styles.php:50
+msgid "Frame"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:70 inc/lqbtheme-customizer.php:89
+msgid "HTML code."
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://netligrup.com/author/xfebrian/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://netligrup.com/tema/lq-berita/"
+msgstr ""
+
+#: footer.php:37
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: inc/template-functions.php:296
+msgid "Instagram"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:147
+msgid "Instagram Url"
+msgstr ""
+
+#: template-parts/content-none.php:35
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: 404.php:96 page-index.php:88 search.php:136
+msgid "Jan"
+msgstr ""
+
+#: 404.php:102 page-index.php:94 search.php:142
+msgid "Jul"
+msgstr ""
+
+#: 404.php:101 page-index.php:93 search.php:141
+msgid "Jun"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:146
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-functions.php:306
+msgid "Linkedin"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:127
+msgctxt "list item separator"
+msgid " "
+msgstr ""
+
+#. Name of the theme
+#: inc/block-patterns.php:20
+msgid "LQ Berita"
+msgstr ""
+
+#. Description of the theme
+msgid "LQ Berita very light, and only supports classic editor users"
+msgstr ""
+
+#: 404.php:98 page-index.php:90 search.php:138
+msgid "Mar"
+msgstr ""
+
+#: 404.php:100 page-index.php:92 search.php:140
+msgid "May"
+msgstr ""
+
+#: functions.php:49
+msgid "Mobile Navigation"
+msgstr ""
+
+#: index.php:25
+msgid "News Feed"
+msgstr ""
+
+#: archive.php:22 template-parts/content.php:67
+msgid "News Indeks"
+msgstr ""
+
+#: index.php:28 template-parts/content.php:67
+msgid "News Index"
+msgstr ""
+
+#: inc/template-tags.php:315
+msgid "Next &rarr;"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: 404.php:106 page-index.php:98 search.php:146
+msgid "Nov"
+msgstr ""
+
+#: 404.php:105 page-index.php:97 search.php:145
+msgid "Oct"
+msgstr ""
+
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: template-parts/content-page.php:25 template-parts/content.php:48
+msgid "Pages:"
+msgstr ""
+
+#: inc/template-functions.php:286
+msgid "Pinterest"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:110
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:94
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. Hidden accessibility text.
+#: inc/template-tags.php:326
+msgid "Posts Navigation"
+msgstr ""
+
+#: functions.php:48
+msgid "Primary"
+msgstr ""
+
+#. %s: CMS name, i.e. WordPress.
+#: footer.php:40
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/block-patterns.php:33
+msgid "Recent News"
+msgstr ""
+
+#: inc/template-functions.php:301
+msgid "Reddit"
+msgstr ""
+
+#: inc/template-functions.php:352
+msgid "RSS"
+msgstr ""
+
+#: functions.php:176 header.php:59
+msgid "Search for news"
+msgstr ""
+
+#. %s: search query.
+#: search.php:27
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/template-tags.php:60
+msgid "Send To WhatsApp"
+msgstr ""
+
+#: 404.php:104 page-index.php:96 search.php:144
+msgid "Sep"
+msgstr ""
+
+#: inc/template-tags.php:55
+msgid "Share to facebook"
+msgstr ""
+
+#: functions.php:144
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: search.php:55
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/template-functions.php:341
+msgid "Soundcloud"
+msgstr ""
+
+#: inc/template-functions.php:321
+msgid "Spotify"
+msgstr ""
+
+#: inc/template-functions.php:336
+msgid "Telegram"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:184
+msgid "Telegram URL"
+msgstr ""
+
+#: inc/template-functions.php:331
+msgid "TikTok"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:175
+msgid "TikTok URL"
+msgstr ""
+
+#: inc/template-functions.php:316
+msgid "Twitch"
+msgstr ""
+
+#: 404.php:84 page-index.php:76 search.php:124
+msgid "View Archive By Date"
+msgstr ""
+
+#: inc/template-functions.php:326
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:166
+msgid "WhatsApp URL"
+msgstr ""
+
+#: inc/template-functions.php:291
+msgid "WordPress"
+msgstr ""
+
+#: inc/template-functions.php:263
+msgid "X"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:138
+msgid "X Url"
+msgstr ""
+
+#. Author of the theme
+msgid "xfebrian"
+msgstr ""
+
+#: inc/template-functions.php:311
+msgid "Youtube"
+msgstr ""
+
+#: inc/lqbtheme-customizer.php:156
+msgid "Youtube Url"
+msgstr ""
