@@ -205,7 +205,7 @@ if ( ! function_exists( 'berita_undermenu' ) ) {
 			echo '
 						<div class="widget_block">
 							<figure class="banner-image size-large">';
-			echo '<img decoding="async" loading="lazy" src="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
+			echo '<img decoding="async" loading="lazy" srcset="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
 			echo '			</figure>
 						</div>
 					';
@@ -235,7 +235,7 @@ if ( ! function_exists( 'berita_underpost' ) ) {
 			echo '
 						<div class="widget_block">
 							<figure class="banner-image size-large">';
-			echo '<img decoding="async" loading="lazy" src="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
+			echo '<img decoding="async" loading="lazy" srcset="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
 			echo '			</figure>
 						</div>
 					';
