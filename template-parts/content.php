@@ -56,7 +56,6 @@
 			<?php berita_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 		<div class="content-single-ads">
-            <div class="line-break"><hr></div>
             <?php do_action( 'berita_underpost' ); ?>
         </div>
 		<div class="content-single-recent">

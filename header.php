@@ -171,9 +171,9 @@
 				
 			</header><!-- #masthead -->
 		<?php } ?>
-		<div class="widget_block">
-			<figure class="banner-image size-large">
-				<?php the_header_image_tag( array( 'width' => '1024', 'flex-width'  => true, ) ); ?>
+		<div class="header_block">
+			<figure class="header-image size-large">
+				<?php the_header_image_tag( array( 'flex-width'  => true, ) ); ?>
 			</figure>
 		</div>
 		<?php do_action( 'berita_undermenu' ); ?>

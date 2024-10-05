@@ -530,7 +530,7 @@ figure {
 }
 
 table {
-	margin: 0 0 1.5em;
+	margin: 0 0 0.5em;
 	width: 100%;
 }
 
@@ -1444,6 +1444,33 @@ ul.index-page-numbers { margin: 0 0 0.3em 0.3em; }
 	display: table;
 	clear: both;
 }
+.header_block {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	clear: both;
+	justify-content: center;
+	box-shadow: 0 1px 0 0 rgb(9, 100, 115);
+  }
+  
+.header_block .header-image {
+	  position: relative;
+	  padding-top: 0;
+	  padding-bottom: 0;
+	  content: " ";
+	  display: flex;
+	  flex-direction: column;
+	  
+}
+.header_block figure {margin:0;}
+  
+.header_block .header-image img {
+	width: 100%;
+	display: block;
+}
+
 .banner-image {
 	margin-top: 10px;
 	margin-bottom: 10px;

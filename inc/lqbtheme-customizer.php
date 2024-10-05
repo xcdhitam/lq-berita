@@ -62,7 +62,7 @@ $sections[] = array(
     'title'       => __( 'Banner Under Menu', 'lq-berita' ),
     'priority'    => 15,
     'panel'       => $panel_banner,
-    'description' => __( 'Enter the Google AdSense code or other advertising code<br> Example : <br>&lt;img decoding="async" loading="lazy" src="https://lamanqu.com/wp-content/uploads/2023/03/selamat-menjalankan-ibadah-puasa.jpg" alt="banner" class="wp-image-7010"sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168"&gt;', 'lq-berita' ),
+    'description' => __( 'Enter the Google AdSense code or other advertising code<br> Example : <br>&lt;img decoding="async" loading="lazy" src="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1028px) 100vw, 1028px" width="1028" height="260"&gt;', 'lq-berita' ),
 );
 
 $options[ $lqbprefix . '_undermenu' ] = array(
@@ -81,7 +81,7 @@ $sections[] = array(
     'title'       => __( 'Banner Under Post', 'lq-berita' ),
     'priority'    => 15,
     'panel'       => $panel_banner,
-    'description' => __( 'Enter the Google AdSense code or other advertising code<br> Example : <br>&lt;img decoding="async" loading="lazy" src="https://lamanqu.com/wp-content/uploads/2023/03/selamat-menjalankan-ibadah-puasa.jpg" alt="banner" class="wp-image-7010"sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168"&gt;', 'lq-berita' ),
+    'description' => __( 'Enter the Google AdSense code or other advertising code<br> Example : <br>&lt;img decoding="async" loading="lazy" src="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1028px) 100vw, 1028px" width="1028" height="260"&gt;', 'lq-berita' ),
 );
 
 $options[ $lqbprefix . '_underpost' ] = array(
