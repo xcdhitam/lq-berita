@@ -67,7 +67,7 @@ if ( ! function_exists( 'berita_home_post' ) ) {
 				$post_title = isset( $post->post_title ) ? $post->post_title : '';
 				?>
 				
-				<article id="post-<?php the_ID(); ?>" <?php post_class( 'block-post-headline' ); ?> itemscope itemtype="https://schema.org/NewsArticle">
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'block-post-headline' ); ?> itemtype="https://schema.org/NewsArticle">
 					<div class="body-post-headline">
 						<?php the_post_thumbnail( 'medium_large', array( 'alt' => $tag_module )); ?>
 						<div class="details-post-headline">
@@ -157,7 +157,7 @@ if ( ! function_exists( 'berita_related_post' ) ) {
 				$tag_alt = strip_tags(get_the_tag_list('',' , ',''));
 				?>
 				
-				<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-content-list' ); ?> itemscope itemtype="https://schema.org/NewsArticle">
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-content-list' ); ?> itemtype="https://schema.org/NewsArticle">
 					
 					<header class="content-list-text">
 						<h2 class="content-list-title" itemprop="headline"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php echo $post_title; ?>...</a></h2>						

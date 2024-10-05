@@ -1471,6 +1471,8 @@ ul.index-page-numbers { margin: 0 0 0.3em 0.3em; }
 	display: block;
 }
 
+
+
 .banner-image {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -1667,12 +1669,32 @@ ul.index-page-numbers { margin: 0 0 0.3em 0.3em; }
 .content-single-details .meta-cell ul.by-socialicon-share li.facebook a{background: #3b5998;}
 .content-single-details .meta-cell ul.by-socialicon-share li.telegram a{background: #0088cc;}
 .content-single-details .meta-cell ul.by-socialicon-share li.whatsapp a{background: #25d366;}
-.post-content-single .gambar-caption, .wp-element-caption {font-size:11px;font-weight: var(--font-reguler, 400);}
+.post-content-single .gambar-caption, .wp-element-caption {font-size:11px;font-weight: var(--font-reguler, 400);text-align: left;padding-left: 5px;}
 .post-content-single .content-single-images { flex: 1;}
 .content-single-image img {background-color: rgb(238, 238, 238);border-radius: 4px;}
 
 .post-content-single .content-single-entry {color: #000000;margin-bottom: 24px;}
 .post-content-single .content-single-entry img {background-color: rgb(238, 238, 238);border-radius: 4px;}
+.post-content-single .content-single-entry figure {
+	padding: 0 !important;
+  	position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+  	margin-bottom: 20px;  	
+}
+.post-content-single .content-single-entry figure::before {box-sizing: border-box;}
+.post-content-single .content-single-entry .is-type-video {
+	flex: 1;
+  	width: calc(100%);
+  	display: block;
+  	margin-bottom: 0;	
+}
+.post-content-single .content-single-entry figure .wp-block-embed__wrapper {
+	height: 50vh;
+  	overflow: hidden;		
+}
+.wp-embed-responsive .wp-has-aspect-ratio iframe {border-radius: 13px;}
 .post-content-single .content-single-footer {display: flex;flex-flow: row wrap;border-bottom: 1px dotted rgb(9, 100, 115);}
 .post-content-single .content-single-footer .links-tags { position: relative; padding: 0;display: block; }
 .post-content-single .content-single-footer .links-tags a { display: inline-block; background: #f0f0f0; margin-right: 8px; margin-bottom: 8px; padding: 8px; border-radius: 4px; text-decoration: none;}

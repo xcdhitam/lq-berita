@@ -191,7 +191,7 @@ if ( ! function_exists( 'berita_post_thumbnail' ) ) :
 			?>
 
 			<div class="content-single-images content-single-image">
-				<?php the_post_thumbnail( 'medium_large', array( 'alt' => $tag_alt )); ?>
+				<?php the_post_thumbnail( 'medium_large', array( 'alt' => $tag_alt, 'itemprop' => 'image' )); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>

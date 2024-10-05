@@ -51,7 +51,7 @@
 				);
 			?>
 		</div><!-- .entry-content -->
-
+		<div class="line-break"></div>
 		<footer class="content-single-footer">
 			<?php berita_entry_footer(); ?>
 		</footer><!-- .entry-footer -->

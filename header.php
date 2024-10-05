@@ -105,7 +105,7 @@
 				</div>
 			</div>
 		</header>
-		<nav class="mobile-medium" role="navigation" aria-label="Navigation Menu" <?php echo berita_itemtype_schema( 'SiteNavigationElement' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>>
+		<nav class="mobile-medium" aria-label="Navigation Menu" <?php echo berita_itemtype_schema( 'SiteNavigationElement' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>>
 					<?php
 						wp_nav_menu(
 							array(
@@ -152,7 +152,7 @@
 					</div>
 					<div class="column-auto-menu item-menu-right">
 						
-						<nav id="site-navigation-web" role="navigation" aria-label="Navigation Menu" class="menu-navigation" <?php echo berita_itemtype_schema( 'SiteNavigationElement' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>>
+						<nav id="site-navigation-web" aria-label="Navigation Menu" class="menu-navigation" <?php echo berita_itemtype_schema( 'SiteNavigationElement' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>>
 						<?php
 							wp_nav_menu(
 								array(
