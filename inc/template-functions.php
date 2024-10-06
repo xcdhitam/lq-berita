@@ -69,7 +69,14 @@ if ( ! function_exists( 'berita_home_post' ) ) {
 				
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'block-post-headline' ); ?> itemtype="https://schema.org/NewsArticle">
 					<div class="body-post-headline">
-						<?php the_post_thumbnail( 'medium_large', array( 'alt' => $tag_module )); ?>
+						<?php 
+							if ( !empty(get_the_post_thumbnail()) ) {
+								the_post_thumbnail( 'medium_large', array( 'alt' => $tag_module ));
+							} else {
+								echo '<img src="'. get_template_directory_uri() .'/no-image.png" alt="'. $tag_module .'"/>';
+							}
+							
+						?>
 						<div class="details-post-headline">
 							<header class="data-post-headline">	
 								<?php the_title( '<h2 class="judul-headline" itemprop="headline" rel="bookmark"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" title="'. $post_title .'">', '</a></h2>' );  ?>
@@ -212,7 +219,7 @@ if ( ! function_exists( 'berita_undermenu' ) ) {
 		}
 	}
 }
-add_action( 'berita_undermenu', 'berita_undermenu', 10 );
+add_action( 'berita_undermenu', 'berita_undermenu', 9 );
 
 if ( ! function_exists( 'berita_underpost' ) ) {
 	/**
@@ -354,4 +361,4 @@ if ( ! function_exists( 'berita_list_social' ) ) :
 		endif;
 	}
 endif; /* endif berita_list_social */
-add_action( 'social_icon', 'berita_list_social', 5 );
+add_action( 'social_icon', 'berita_list_social', 11 );

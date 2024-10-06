@@ -187,6 +187,7 @@ if ( ! function_exists( 'berita_post_thumbnail' ) ) :
 			return;
 		}
 		$tag_alt = strip_tags(get_the_tag_list('',' , ',''));
+		$title_img = get_the_title();
 		if ( is_singular() ) :
 			?>
 
@@ -201,9 +202,10 @@ if ( ! function_exists( 'berita_post_thumbnail' ) ) :
 					the_post_thumbnail(
 						'medium',
 						array(
-							'alt' => $tag_alt
+							'alt' => $tag_alt,
+							'title' => $title_img
 						)
-					);
+					);					
 				?>
 			</a>
 			</div>

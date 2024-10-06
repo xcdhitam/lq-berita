@@ -71,7 +71,16 @@
         </div>
 	<?php 
 		else : 
-		berita_post_thumbnail();
+			if ( has_post_thumbnail() ) {
+				berita_post_thumbnail();
+			}else{ 
+				echo '<div class="content-list-images content-list-image">';
+				echo '<a class="post-thumbnail" href="' . esc_url( get_permalink() ) . '" aria-hidden="true">';
+					echo '<img class="attachment-medium size-medium wp-post-image" src="'. get_template_directory_uri() .'/no-image.png" alt="'. $post->post_title .'" title="'. $post->post_title .'"/>';
+				echo '</a>
+					</div>';
+			}
+		
 	?>
 	
 	<header class="content-list-text">

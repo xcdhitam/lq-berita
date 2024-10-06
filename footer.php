@@ -12,35 +12,49 @@
 ?>
 
 			<footer id="colophon" class="site-footer">
-			<?php
-                echo '<div class="by-follow">';
-                    echo '<ul class="social-icon">';
-                           do_action( 'social_icon' );
-                    echo '</ul>';
-                echo '</div>';
-            ?>
-			<div class="site-info">
-                    <nav class="menu-footer-container" role="navigation" aria-label="footer" <?php echo berita_itemtype_schema( 'SiteNavigationElement' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>>    
-                    <?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'footer',
-									'menu_class'     => 'by-menu',
-                                    'link_before'    => '<span itemprop="name">',
-									'link_after'     => '</span>',
-								)
-							);
-					?>
-                    </nav>
-                </div>
+				<div class="site-info">
+					<div class="footer-widget">
+						<div class="footerone">
+							<?php dynamic_sidebar( 'footer-1' ); ?>
+						</div>
+						<div class="footertwo">
+							<?php dynamic_sidebar( 'footer-2' ); ?>
+						</div>
+						<div class="webinfo">
+							<?php
+								echo '<div class="by-follow">';
+									echo '<ul class="social-icon">';
+										do_action( 'social_icon' );
+									echo '</ul>';
+								echo '</div>';
+							?>
+						</div>
+					</div>
+				</div>
 				<div class="by-copyright">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lq-berita' ) ); ?>">
-						<?php
-						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( esc_html__( 'Proudly powered by %s', 'lq-berita' ), 'WordPress' );
-						?>
-					</a>
-				</div><!-- .site-info -->
+					<div class="menufooter">
+						<nav class="menu-footer-container" role="navigation" aria-label="footer" <?php echo berita_itemtype_schema( 'SiteNavigationElement' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>>    
+							<?php
+									wp_nav_menu(
+										array(
+											'theme_location' => 'footer',
+											'menu_class'     => 'by-menu',
+											'link_before'    => '<span itemprop="name">',
+											'link_after'     => '</span>',
+										)
+									);
+							?>
+						</nav>
+					</div>
+					<div class="copyright">
+						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lq-berita' ) ); ?>">
+							<?php
+							/* translators: %s: CMS name, i.e. WordPress. */
+							printf( esc_html__( 'Proudly powered by %s', 'lq-berita' ), 'WordPress' );
+							?>
+						</a>
+					</div>
+				</div><!-- .by-copyright -->
 			</footer><!-- #colophon -->
 		</div>
 	</diV>
