@@ -1315,6 +1315,145 @@ textarea {
 .site-footer .site-info .footer-widget .footertwo { grid-area: 1 / 2 / 2 / 3; }
 .site-footer .site-info .footer-widget .webinfo { grid-area: 1 / 3 / 2 / 4; } 
 
+<<<<<<< HEAD
+=======
+.site-footer .site-info .footer-widget .footerone .heading {
+	font-weight: 600;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	z-index: 7;
+	position: relative;
+	width: auto;
+	text-decoration-skip-ink: auto;
+}
+.site-footer .site-info .footer-widget .footerone .heading::after {
+	content: "";
+	display: inherit;
+	position: relative;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	width: 100%;
+	z-index: -7;
+}
+.site-footer .site-info .footer-widget .footerone .content-list {
+	border: 1px solid;
+	  border-top-color: currentcolor;
+	  border-right-color: currentcolor;
+	  border-bottom-color: currentcolor;
+	  border-left-color: currentcolor;
+	border-color: #f2f2f2 !important;
+	border-radius: 4px;
+	padding: 0;
+	-moz-box-pack: justify;
+	justify-content: space-between;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 10px;
+}
+.site-footer .site-info .footer-widget .footerone .content-list .content-list-text {
+	order: 1;
+	
+}
+.site-footer .site-info .footer-widget .footerone .content-list .content-list-text {
+	flex: 3 0px;
+}
+.site-footer .site-info .footer-widget .footerone .content-list > * {
+	padding: 5px;
+}
+.site-footer .site-info .footer-widget .footerone .content-list .content-list-text h3.content-list-title {
+    font-size: 13px;
+    display: block;
+}
+.site-footer .site-info .footer-widget .footerone .content-list .content-list-text h3.content-list-title a{
+	overflow: hidden; display: -webkit-box;	-webkit-line-clamp: 2;	line-clamp: 2; -webkit-box-orient: vertical;
+}
+.site-footer .site-info .footer-widget .footerone .content-list .content-list-images {
+	flex: 1.5 0;
+}
+.site-footer .site-info .footer-widget .footerone .content-list .content-list-image {
+	order: 2;
+}
+.site-footer .site-info .footer-widget .footerone .content-list .content-list-image .post-thumbnail img {
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    height: 65px;
+    width: 100%;
+}
+.site-footer .site-info .footer-widget .footertwo .heading {
+	font-weight: 600;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	z-index: 7;
+	position: relative;
+	width: auto;
+	text-decoration-skip-ink: auto;
+}
+.site-footer .site-info .footer-widget .footertwo .heading::after {
+	content: "";
+	display: inherit;
+	position: relative;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	width: 100%;
+	z-index: -7;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list {
+	border: 1px solid;
+	  border-top-color: currentcolor;
+	  border-right-color: currentcolor;
+	  border-bottom-color: currentcolor;
+	  border-left-color: currentcolor;
+	border-color: #f2f2f2 !important;
+	border-radius: 4px;
+	padding: 0;
+	-moz-box-pack: justify;
+	justify-content: space-between;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 10px;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list .content-list-text {
+	order: 1;
+	
+}
+.site-footer .site-info .footer-widget .footertwo .content-list .content-list-text {
+	flex: 3 0px;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list > * {
+	padding: 5px;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list .content-list-text h3.content-list-title {
+    font-size: 13px;
+    display: block;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list .content-list-text h3.content-list-title a{
+	overflow: hidden; display: -webkit-box;	-webkit-line-clamp: 2;	line-clamp: 2; -webkit-box-orient: vertical;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list .content-list-images {
+	flex: 1.5 0;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list .content-list-image {
+	order: 2;
+}
+.site-footer .site-info .footer-widget .footertwo .content-list .content-list-image .post-thumbnail img {
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    height: 65px;
+    width: 100%;
+}
+>>>>>>> b9cdf76 (initial commit)
 /* - Social & Icons */
 .site-footer .site-info .footer-widget .webinfo .by-follow {
 	display: flex;
@@ -2724,6 +2863,7 @@ ol.comment-list li.pingback {
     color: #fff;
 }
 .wp-block-post-title a {text-decoration: none;}
+<<<<<<< HEAD
 
 #page {
 	position: relative;
@@ -2737,3 +2877,5 @@ ol.comment-list li.pingback {
 	-ms-flex-direction: column;
 	flex-direction: column;
   }
+=======
+>>>>>>> b9cdf76 (initial commit)

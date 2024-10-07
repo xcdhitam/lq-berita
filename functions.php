@@ -124,7 +124,11 @@ add_action( 'after_setup_theme', 'berita_setup' );
  * @global int $content_width
  */
 function berita_content_width() {
+<<<<<<< HEAD
 	$GLOBALS['content_width'] = apply_filters( 'berita_content_width', 720 );
+=======
+	$GLOBALS['content_width'] = apply_filters( 'berita_content_width', 920 );
+>>>>>>> b9cdf76 (initial commit)
 }
 add_action( 'after_setup_theme', 'berita_content_width', 0 );
 

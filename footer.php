@@ -15,10 +15,21 @@
 				<div class="site-info">
 					<div class="footer-widget">
 						<div class="footerone">
+<<<<<<< HEAD
 							<?php dynamic_sidebar( 'footer-1' ); ?>
 						</div>
 						<div class="footertwo">
 							<?php dynamic_sidebar( 'footer-2' ); ?>
+=======
+							<?php 
+								do_action( 'berita_footer_one' );								
+							?>
+						</div>
+						<div class="footertwo">
+							<?php 
+								do_action( 'berita_footer_two' );								
+							?>
+>>>>>>> b9cdf76 (initial commit)
 						</div>
 						<div class="webinfo">
 							<?php

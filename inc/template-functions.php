@@ -212,7 +212,11 @@ if ( ! function_exists( 'berita_undermenu' ) ) {
 			echo '
 						<div class="widget_block">
 							<figure class="banner-image size-large">';
+<<<<<<< HEAD
 			echo '<img decoding="async" loading="lazy" srcset="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
+=======
+			echo '<img decoding="async" loading="lazy" srcset="'. get_template_directory_uri() .'/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
+>>>>>>> b9cdf76 (initial commit)
 			echo '			</figure>
 						</div>
 					';
@@ -242,7 +246,11 @@ if ( ! function_exists( 'berita_underpost' ) ) {
 			echo '
 						<div class="widget_block">
 							<figure class="banner-image size-large">';
+<<<<<<< HEAD
 			echo '<img decoding="async" loading="lazy" srcset="https://netligrup.com/wp-content/uploads/2024/10/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
+=======
+			echo '<img decoding="async" loading="lazy" srcset="'. get_template_directory_uri() .'/banner-ads.png" alt="banner" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="168">';
+>>>>>>> b9cdf76 (initial commit)
 			echo '			</figure>
 						</div>
 					';
@@ -362,3 +370,128 @@ if ( ! function_exists( 'berita_list_social' ) ) :
 	}
 endif; /* endif berita_list_social */
 add_action( 'social_icon', 'berita_list_social', 11 );
+<<<<<<< HEAD
+=======
+
+if ( ! function_exists( 'berita_footer_one' ) ) :
+	/**
+	 * This function for display module in footer
+	 *
+	 * @since 2.0.4
+	 *
+	 * @return void
+	 */
+	function berita_footer_one() {
+		$cat = get_theme_mod( 'lqb_category-footerone', 0 );
+
+		$args = array(
+			'post_type'              => 'post',
+			'cat'                    => $cat,
+			'orderby'                => 'date',
+			'order'                  => 'desc',
+			'showposts'              => 3,
+			'post_status'            => 'publish',
+			'ignore_sticky_posts'    => true,
+			/**
+			 * Make it fast withour update term cache and cache results
+			 * https://thomasgriffin.io/optimize-wordpress-queries/
+			 */
+			'update_post_term_cache' => false,
+			'update_post_meta_cache' => false,
+			'cache_results'          => false,
+			'no_found_rows'          => true,
+			'fields'                 => 'ids',
+		);
+
+		$recent = new WP_Query( apply_filters( 'berita_footer_one_posts_args', $args ) );
+		if ( $recent->have_posts() ) {
+			echo '<h2 class="heading">'. get_cat_name( $category_id = $cat ) .'</h2>';		
+			while ( $recent->have_posts() ) :
+				$recent->the_post();
+				global $post;
+				$postid = isset( $post->ID ) ? $post->ID : get_the_ID();
+				echo '<div class="content-list">';	
+				if ( has_post_thumbnail() ) {
+					berita_post_thumbnail();
+				}else{ 
+					echo '<div class="content-list-images content-list-image">';
+					echo '<a class="post-thumbnail" href="' . esc_url( get_permalink() ) . '" aria-hidden="true">';
+						echo '<img class="attachment-medium size-medium wp-post-image" src="'. get_template_directory_uri() .'/no-image.png" alt="'. get_the_title() .'" title="'. get_the_title() .'"/>';
+					echo '</a>
+						</div>';
+				}
+				?>
+				<header class="content-list-text">
+					<?php the_title( '<h3 class="content-list-title" itemprop="headline"><a href="' . esc_url( get_permalink() ) . '" title="'. get_the_title() .'" rel="bookmark">', '</a></h3>' );  ?>
+				</header>
+			<?php
+				echo '</div>';
+			endwhile;
+			
+			wp_reset_postdata();
+		}
+	}
+endif; /* endif berita_footer_one */
+add_action( 'berita_footer_one', 'berita_footer_one', 12 );
+
+if ( ! function_exists( 'berita_footer_two' ) ) :
+	/**
+	 * This function for display module in footer
+	 *
+	 * @since 2.0.4
+	 *
+	 * @return void
+	 */
+	function berita_footer_two() {
+		$cat = get_theme_mod( 'lqb_category-footertwo', 0 );
+
+		$args = array(
+			'post_type'              => 'post',
+			'cat'                    => $cat,
+			'orderby'                => 'date',
+			'order'                  => 'desc',
+			'showposts'              => 3,
+			'post_status'            => 'publish',
+			'ignore_sticky_posts'    => true,
+			/**
+			 * Make it fast withour update term cache and cache results
+			 * https://thomasgriffin.io/optimize-wordpress-queries/
+			 */
+			'update_post_term_cache' => false,
+			'update_post_meta_cache' => false,
+			'cache_results'          => false,
+			'no_found_rows'          => true,
+			'fields'                 => 'ids',
+		);
+
+		$recent = new WP_Query( apply_filters( 'berita_footer_two_posts_args', $args ) );
+		if ( $recent->have_posts() ) {
+			echo '<h2 class="heading">'. get_cat_name( $category_id = $cat ) .'</h2>';		
+			while ( $recent->have_posts() ) :
+				$recent->the_post();
+				global $post;
+				$postid = isset( $post->ID ) ? $post->ID : get_the_ID();
+				echo '<div class="content-list">';	
+				if ( has_post_thumbnail() ) {
+					berita_post_thumbnail();
+				}else{ 
+					echo '<div class="content-list-images content-list-image">';
+					echo '<a class="post-thumbnail" href="' . esc_url( get_permalink() ) . '" aria-hidden="true">';
+						echo '<img class="attachment-medium size-medium wp-post-image" src="'. get_template_directory_uri() .'/no-image.png" alt="'. get_the_title() .'" title="'. get_the_title() .'"/>';
+					echo '</a>
+						</div>';
+				}
+				?>
+				<header class="content-list-text">
+					<?php the_title( '<h3 class="content-list-title" itemprop="headline"><a href="' . esc_url( get_permalink() ) . '" title="'. get_the_title() .'" rel="bookmark">', '</a></h3>' );  ?>
+				</header>
+			<?php
+				echo '</div>';
+			endwhile;
+			
+			wp_reset_postdata();
+		}
+	}
+endif; /* endif berita_footer_two */
+add_action( 'berita_footer_two', 'berita_footer_two', 13 );
+>>>>>>> b9cdf76 (initial commit)
