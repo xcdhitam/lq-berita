@@ -370,8 +370,6 @@ if ( ! function_exists( 'berita_list_social' ) ) :
 	}
 endif; /* endif berita_list_social */
 add_action( 'social_icon', 'berita_list_social', 11 );
-<<<<<<< HEAD
-=======
 
 if ( ! function_exists( 'berita_footer_one' ) ) :
 	/**
@@ -494,4 +492,3 @@ if ( ! function_exists( 'berita_footer_two' ) ) :
 	}
 endif; /* endif berita_footer_two */
 add_action( 'berita_footer_two', 'berita_footer_two', 13 );
->>>>>>> b9cdf76 (initial commit)
