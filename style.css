@@ -2860,19 +2860,3 @@ ol.comment-list li.pingback {
     color: #fff;
 }
 .wp-block-post-title a {text-decoration: none;}
-<<<<<<< HEAD
-
-#page {
-	position: relative;
-	-js-display: flex;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	min-height: 100vh;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-  }
-=======
->>>>>>> b9cdf76 (initial commit)
