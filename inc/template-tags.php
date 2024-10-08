@@ -214,6 +214,45 @@ if ( ! function_exists( 'berita_post_thumbnail' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'berita_footer_thumbnail' ) ) :
+	/**
+	 * Displays an optional post thumbnail.
+	 *
+	 * Wraps the post thumbnail in an anchor element on index views, or a div
+	 * element when on single views.
+	 */
+	function berita_footer_thumbnail() {
+		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+			return;
+		}
+		$tag_alt = strip_tags(get_the_tag_list('',' , ',''));
+		$title_img = get_the_title();
+		if ( is_singular() ) :
+			?>
+
+			<div class="content-footer-images content-footer-image">
+				<?php the_post_thumbnail( 'medium_large', array( 'alt' => $tag_alt, 'itemprop' => 'image' )); ?>
+			</div><!-- .post-thumbnail -->
+
+		<?php else : ?>
+			<div class="content-footer-images content-footer-image">
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+				<?php
+					the_post_thumbnail(
+						'medium',
+						array(
+							'alt' => $tag_alt,
+							'title' => $title_img
+						)
+					);					
+				?>
+			</a>
+			</div>
+			<?php
+		endif; // End is_singular().
+	}
+endif;
+
 if ( ! function_exists( 'berita_content_header' ) ) :
 
 	function berita_content_header() {

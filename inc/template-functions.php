@@ -400,19 +400,19 @@ if ( ! function_exists( 'berita_footer_one' ) ) :
 				$recent->the_post();
 				global $post;
 				$postid = isset( $post->ID ) ? $post->ID : get_the_ID();
-				echo '<div class="content-list">';	
+				echo '<div class="content-footerone">';	
 				if ( has_post_thumbnail() ) {
-					berita_post_thumbnail();
+					berita_footer_thumbnail();
 				}else{ 
-					echo '<div class="content-list-images content-list-image">';
+					echo '<div class="content-footerone-images content-footerone-image">';
 					echo '<a class="post-thumbnail" href="' . esc_url( get_permalink() ) . '" aria-hidden="true">';
 						echo '<img class="attachment-medium size-medium wp-post-image" src="'. get_template_directory_uri() .'/no-image.png" alt="'. get_the_title() .'" title="'. get_the_title() .'"/>';
 					echo '</a>
 						</div>';
 				}
 				?>
-				<header class="content-list-text">
-					<?php the_title( '<h3 class="content-list-title" itemprop="headline"><a href="' . esc_url( get_permalink() ) . '" title="'. get_the_title() .'" rel="bookmark">', '</a></h3>' );  ?>
+				<header class="content-footerone-text">
+					<?php the_title( '<h3 class="content-footerone-title" itemprop="headline"><a href="' . esc_url( get_permalink() ) . '" title="'. get_the_title() .'" rel="bookmark">', '</a></h3>' );  ?>
 				</header>
 			<?php
 				echo '</div>';
@@ -461,19 +461,19 @@ if ( ! function_exists( 'berita_footer_two' ) ) :
 				$recent->the_post();
 				global $post;
 				$postid = isset( $post->ID ) ? $post->ID : get_the_ID();
-				echo '<div class="content-list">';	
+				echo '<div class="content-footertwo">';	
 				if ( has_post_thumbnail() ) {
-					berita_post_thumbnail();
+					berita_footer_thumbnail();
 				}else{ 
-					echo '<div class="content-list-images content-list-image">';
+					echo '<div class="content-footer-images content-footer-image">';
 					echo '<a class="post-thumbnail" href="' . esc_url( get_permalink() ) . '" aria-hidden="true">';
 						echo '<img class="attachment-medium size-medium wp-post-image" src="'. get_template_directory_uri() .'/no-image.png" alt="'. get_the_title() .'" title="'. get_the_title() .'"/>';
 					echo '</a>
 						</div>';
 				}
 				?>
-				<header class="content-list-text">
-					<?php the_title( '<h3 class="content-list-title" itemprop="headline"><a href="' . esc_url( get_permalink() ) . '" title="'. get_the_title() .'" rel="bookmark">', '</a></h3>' );  ?>
+				<header class="content-footertwo-text">
+					<?php the_title( '<h3 class="content-footertwo-title" itemprop="headline"><a href="' . esc_url( get_permalink() ) . '" title="'. get_the_title() .'" rel="bookmark">', '</a></h3>' );  ?>
 				</header>
 			<?php
 				echo '</div>';

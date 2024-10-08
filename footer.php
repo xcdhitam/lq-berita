@@ -25,6 +25,26 @@
 							?>
 						</div>
 						<div class="webinfo">
+						<?php
+							$custom_logo_id = get_theme_mod( 'custom_logo' );
+							$logo           = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+							$desc           = get_bloginfo( 'name', 'display' );
+							if($custom_logo_id == NULL){
+						?>
+							<div class="footer-nologo">
+								<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h3' : 'div'; ?>
+								<<?php echo $heading_tag; ?> class="footer-title">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+								</<?php echo $heading_tag; ?>>
+								<div class="footer-description"><?php bloginfo( 'description' ); ?></div>
+							</div>
+							<?php
+							}else{ 
+								echo '<a class="custom-logo-link" href="' . esc_url( get_home_url() ) . '" title="' . esc_html( $desc ) . '" rel="home">';
+								echo '<img class="custom-logo" src="' . esc_url( $logo[0] ) . '" width="' . (int) $logo[1] . '" height="' . (int) $logo[2] . '" alt="' . esc_html( $desc ) . '" loading="lazy" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ) .'"/>';
+								echo '</a>';
+							}
+						?>
 							<?php
 								echo '<div class="by-follow">';
 									echo '<ul class="social-icon">';
