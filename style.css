@@ -1469,6 +1469,12 @@ textarea {
 	padding-bottom: 10px;
 }
 
+.site-footer .site-info .footer-widget .webinfo .custom-logo {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
 .site-footer .site-info .footer-widget .webinfo .footer-nologo h3.footer-title {
 	font-size: 13pt;
 	margin: 15px;
@@ -1480,7 +1486,8 @@ textarea {
 }
 .site-footer .site-info .footer-widget .webinfo .footer-nologo .footer-description {
 	font-size: 11pt;
-	margin: 0.5px 0;
+	margin: 0 15px 0 15px;
+	text-align: left;
 }
 .site-footer .site-info .footer-widget .webinfo .footer-nologo .footer-description {
 	width: 100%;
