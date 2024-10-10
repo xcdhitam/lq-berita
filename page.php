@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-
+<div class="wrapper">
 	<main id="primary" class="site-main">
 
 		<?php
@@ -32,7 +32,9 @@ get_header();
 		?>
 
 	</main><!-- #main -->
-
+	<aside class="aside aside-2"> 
+		<?php get_sidebar(); ?>
+	</aside><!-- #slidebar -->
+</div>
 <?php
-get_sidebar();
 get_footer();
