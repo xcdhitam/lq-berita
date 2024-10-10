@@ -43,6 +43,11 @@
 								echo '<a class="custom-logo-link" href="' . esc_url( get_home_url() ) . '" title="' . esc_html( $desc ) . '" rel="home">';
 								echo '<img class="custom-logo" src="' . esc_url( $logo[0] ) . '" width="' . (int) $logo[1] . '" height="' . (int) $logo[2] . '" alt="' . esc_html( $desc ) . '" loading="lazy" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ) .'"/>';
 								echo '</a>';
+							?>
+								<div class="footer-nologo">
+									<div class="footer-description"><?php bloginfo( 'description' ); ?></div>
+								</div>
+							<?php	
 							}
 						?>
 							<?php
