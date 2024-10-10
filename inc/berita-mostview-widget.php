@@ -471,7 +471,7 @@ class berita_mostview_widget extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo esc_html( $this->get_field_id( 'link_title' ) ); ?>"><?php esc_html_e( 'Link Title:', 'lq-berita' ); ?></label>
-			<input class="widefat" id="<?php echo esc_html( $this->get_field_id( 'link_title' ) ); ?>" name="<?php echo esc_html( $this->get_field_name( 'link_title' ) ); ?>" type="url" placeholder="<?php echo get_site_url(); ?>" value="<?php echo esc_attr( $link_title ); ?>" />
+			<input class="widefat" id="<?php echo esc_html( $this->get_field_id( 'link_title' ) ); ?>" name="<?php echo esc_html( $this->get_field_name( 'link_title' ) ); ?>" type="url" value="<?php echo esc_attr( $link_title ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_html( $this->get_field_id( 'category_ids' ) ); ?>"><?php esc_html_e( 'Selected categories', 'lq-berita' ); ?></label>
