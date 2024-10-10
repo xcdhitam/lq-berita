@@ -51,7 +51,7 @@ class Customizer_Library_Categories extends WP_Customize_Control {
 			array(
 				'echo'              => false,
 				'name'              => '_customize-dropdown-categories-' . esc_attr( $this->id ),
-				'show_option_none'  => __( '&mdash; Select &mdash;', 'wpberita' ),
+				'show_option_none'  => __( '&mdash; Select &mdash;', 'lq-berita' ),
 				'option_none_value' => '0',
 				'selected'          => esc_attr( $this->value() ),
 			)
